@@ -1,3 +1,48 @@
 body {
     background: #6D4C41;
 }
+
+#container{
+	position: absolute;
+	width: 90%;
+	height: 80%;
+	
+}
+
+img{
+	position: absolute;
+	width: 15%;
+	height: 22%;
+	margin-top: 3%;
+	margin-left: 1%;
+}
+
+h1{
+	font-family: 'Tangerine', cursive;
+	margin-top: 5%;
+	font-size: 55px;
+
+}
+
+h2{
+	position: absolute;
+	margin-left: 21%;
+	margin-top: 0%;
+	font-family: 'Tangerine', cursive;
+	font-size:35px;
+
+}
+
+.Description,.Description2,.Description3{
+	width: 80%;
+	height: 35%;
+	
+
+}
+
+p{
+	position: absolute;
+	margin-left: 17%;
+	margin-top: 4%;
+
+}
