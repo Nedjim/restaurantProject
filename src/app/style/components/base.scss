@@ -1,7 +1,9 @@
 body {
     background: #6D4C41;
 }
-
+html{
+    font-size: 16px;
+}
 #container{
 	position: absolute;
 	width: 90%;
@@ -27,13 +29,14 @@ h1{
 h2{
 	position: absolute;
 	margin-left: 21%;
-	margin-top: 0%;
+	margin-top: -1rem;
 	font-family: 'Tangerine', cursive;
 	font-size:35px;
 
 }
 
 .Description,.Description2,.Description3{
+    
 	width: 80%;
 	height: 35%;
 	
