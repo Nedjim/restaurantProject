@@ -1,7 +1,21 @@
 import React from 'react';
+import Request from 'superagent';
 
 export default class Content extends React.Component {
+
+    search(){
+        var url = "https://simplonco.github.io/js-css-3days-group-project/data/data.json";
+
+        Request.get(url).then((data) => {
+            console.log(data);
+            //  this.setState({
+            //      body: data.body
+            //  });
+        });
+    }
+
     render() {
+        this.search();
         return (
             <div id="content">
                 <div id="container">
