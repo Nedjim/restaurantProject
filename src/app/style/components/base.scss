@@ -1,51 +1,68 @@
-body {
-    background: #6D4C41;
-}
-html{
+/*-----------------THEME------------------*/
+
+html {
     font-size: 16px;
 }
-#container{
-	position: absolute;
-	width: 90%;
-	height: 80%;
-	
+
+body {
+    background: $greyLight;
 }
 
-img{
-	position: absolute;
-	width: 15%;
-	height: 22%;
-	margin-top: 3%;
-	margin-left: 1%;
+
+/*----------------HEADER-------------------*/
+
+
+/*mettre un id "header" à votre content principale*/
+
+
+/*----------------SLIDE--------------------*/
+
+
+/*mettre un id "slide" à votre content principale*/
+
+
+/*----------------CONTENT------------------*/
+
+#content {
+    #container {
+        position: absolute;
+        width: 90%;
+        height: 80%;
+        h1,
+        h2 {
+            font-family: 'Tangerine', cursive;
+        }
+        img {
+            position: absolute;
+            width: 15%;
+            height: 22%;
+            margin-top: 3%;
+            margin-left: 1%;
+        }
+        h1 {
+            margin-top: 5%;
+            font-size: 55px;
+        }
+        h2 {
+            position: absolute;
+            margin-left: 21%;
+            margin-top: -1rem;
+            font-size: 35px;
+        }
+        .description {
+            width: 80%;
+            height: 35%;
+        }
+        p {
+            position: absolute;
+            margin-left: 17%;
+            margin-top: 4%;
+        }
+    }
 }
 
-h1{
-	font-family: 'Tangerine', cursive;
-	margin-top: 5%;
-	font-size: 55px;
 
-}
+/*----------------------MAP-----------------------*/
 
-h2{
-	position: absolute;
-	margin-left: 21%;
-	margin-top: -1rem;
-	font-family: 'Tangerine', cursive;
-	font-size:35px;
 
-}
-
-.Description,.Description2,.Description3{
-    
-	width: 80%;
-	height: 35%;
-	
-
-}
-
-p{
-	position: absolute;
-	margin-left: 17%;
-	margin-top: 4%;
-
-}
+/*mettre un id "map" à votre content principale*/
