@@ -1,57 +1,161 @@
-body {
-    background: #6D4C41;
-}
-html{
+/*-----------------THEME------------------*/
+
+html {
     font-size: 16px;
-}
-#container{
-	position: absolute;
-	width: 90%;
-	height: 80%;
-	
+    min-width: 500px;
 }
 
-img{
-	position: absolute;
-	width: 15%;
-	height: 22%;
-	margin-top: 3%;
-	margin-left: 1%;
+body {
+    background: $greyLight;
 }
 
-h1{
-	font-family: 'Tangerine', cursive;
-	margin-top: 5%;
-	font-size: 55px;
+
+/*----------------HEADER-------------------*/
+
+
+/*mettre un id "header" à votre content principale*/
+
+header
+{
+    #nav {
+        border: 1px solid #bedb39;
+        border-width: 1px 0;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        float: right;
+    }
+    #nav,
+    {
+        li {
+            display: inline;
+            a {
+                display: inline-block;
+                padding: 25px;
+                color: orange;
+            }
+        }
+    }
+    #nav,
+    a {
+        display: inline-block;
+        padding: 25px;
+        color: orange;
+    }
+    #logo {
+        position: relative;
+        top: -6px;
+        left: -5px;
+    }
+    #menu {
+        padding: 20px;
+    }
 
 }
 
-h3{
-    position: absolute;
-    margin-left: 17%;
-    margin-top: 3%;
+
+/*----------------SLIDE--------------------*/
+
+#slide {
+    margin: 20px auto;
+    overflow: hidden;
+    width: 70%;
+    ul {
+        display: flex;
+        list-style: none;
+        transition: all 0.3s ease-in-out;
+    }
+    ul li img {
+        width: 200%;
+    }
 }
 
-h2{
-	position: absolute;
-	margin-left: 21%;
-	margin-top: -1rem;
-	font-family: 'Tangerine', cursive;
-	font-size:35px;
+
+/*mettre un id "slide" à votre content principale*/
+
+
+/*----------------CONTENT------------------*/
+
+#content {
+
+    color: $grey;
+
+    margin: 2rem 2rem;
+
+    text-align: center;
+
+    .title {
+
+        font-family: $tangerine;
+
+        font-size: 5rem;
+
+        text-align: center;
+
+    }
+
+    .plat {
+
+        background: $white;
+
+        transition-duration: 0.1s;
+
+        @include border-radius(1rem);
+
+        border: 0.1rem solid #BDBDBD;
+
+        display: inline-block;
+
+        margin: 0.5rem;
+
+        padding: 0.5rem;
+
+        width: 20rem;
+
+        height: 20rem;
+
+        img {
+
+            @include border-radius(0.5rem);
+
+            transition-duration: 0.2s;
+
+            width: 60%;
+
+            margin: 1rem 0.5rem;
+
+        }
+
+        h3 {
+
+            font-size: 1.5rem;
+
+            color: $brown;
+
+        }
+
+        p {
+
+            position: absolute;
+
+            width: 20rem;
+
+        }
+
+    }
+
+    .plat:hover {
+
+        box-shadow: 0.2rem 0.2rem 0.2rem #BDBDBD;
+
+        img {
+
+            width: 62%;
+
+        }
+
+    }
 
 }
 
-.Description,.Description2,.Description3{
-    
-	width: 80%;
-	height: 35%;
-	
-
-}
-
-p{
-	position: absolute;
-	margin-left: 17%;
-	margin-top: 7%;
-
-}
