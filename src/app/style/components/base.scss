@@ -14,6 +14,44 @@ body {
 
 
 /*mettre un id "header" à votre content principale*/
+header,{
+    #nav{
+        border:1px solid #bedb39;
+        border-width:1px 0;
+        list-style:none;
+        margin:0;
+        padding:0;
+        text-align:center;
+        float: right;
+    }
+    #nav,{
+      li{
+         display:inline;
+         a{
+             display:inline-block;
+             padding:25px;
+             color: orange;
+         }
+
+      }
+    }
+    #nav, a{
+        display:inline-block;
+        padding:25px;
+        color: orange;
+    }
+
+    #logo{
+      position: relative;
+      top: -6px;
+      left: -5px;
+
+    }
+
+    #menu{
+      padding: 20px;
+    }
+}
 
 
 /*----------------SLIDE--------------------*/
