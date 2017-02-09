@@ -18,6 +18,25 @@ body {
 
 /*----------------SLIDE--------------------*/
 
+#slide{
+	margin: 20px auto;
+	overflow:hidden;
+	width:70%;
+
+    ul{
+
+    	display:flex;
+    	list-style: none;
+    	transition: all 0.3s ease-in-out;
+    }
+
+    ul li img {
+    	width:200%;
+
+    }
+}
+
+
 
 /*mettre un id "slide" à votre content principale*/
 
