@@ -2,7 +2,7 @@ import React from 'react';
 import Request from 'superagent';
 import _ from 'lodash';
 import Cards from './Cards.jsx';
-
+import Panier from './Panier.jsx';
 
 export default class Content extends React.Component {
  constructor(){
@@ -21,18 +21,21 @@ export default class Content extends React.Component {
          });
      }
 
+
+
     render() {
         this.search();
         var contents = _.map(this.state.cards, (element)=>{
             return (
-                   <Cards name={element.name} description={element.description} photo={element.image}/>
+                   <Cards name={element.name} description={element.description} image={element.image}/>
                 );
         });
         return (
                 <div id="content">
                    <h1 className="title">Carte du restaurant</h1>
                    {contents}
+                <Panier />
                 </div>
-        );   
+        );
     }
 }

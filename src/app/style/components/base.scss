@@ -15,8 +15,7 @@ body {
 
 /*mettre un id "header" à votre content principale*/
 
-header
-{
+header {
     #nav {
         border: 1px solid #bedb39;
         border-width: 1px 0;
@@ -51,7 +50,6 @@ header
     #menu {
         padding: 20px;
     }
-
 }
 
 
@@ -78,84 +76,44 @@ header
 /*----------------CONTENT------------------*/
 
 #content {
-
     color: $grey;
-
     margin: 2rem 2rem;
-
     text-align: center;
-
     .title {
-
         font-family: $tangerine;
-
         font-size: 5rem;
-
         text-align: center;
-
     }
-
     .plat {
-
         background: $white;
-
         transition-duration: 0.1s;
-
         @include border-radius(1rem);
-
         border: 0.1rem solid #BDBDBD;
-
         display: inline-block;
-
         margin: 0.5rem;
-
         padding: 0.5rem;
-
         width: 20rem;
-
         height: 20rem;
-
         img {
-
             @include border-radius(0.5rem);
-
             transition-duration: 0.2s;
-
-            width: 60%;
-
+            width: 11rem;
+            height: 8rem;
             margin: 1rem 0.5rem;
-
         }
-
         h3 {
-
             font-size: 1.5rem;
-
             color: $brown;
-
         }
-
         p {
-
             position: absolute;
-
             width: 20rem;
-
         }
-
     }
-
     .plat:hover {
-
         box-shadow: 0.2rem 0.2rem 0.2rem #BDBDBD;
-
         img {
-
-            width: 62%;
-
+            width: 12rem;
         }
-
     }
-
 }
-
