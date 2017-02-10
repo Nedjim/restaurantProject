@@ -25,5 +25,5 @@ Lien: http://localhost:8080/
 ## Note: installation suplémentaire
 ```
 $ npm install superagent --save
-$ rajouter ici
+$ npm install --save-dev file-loader
 ```
