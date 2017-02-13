@@ -20,19 +20,28 @@ header {
             border: 1px solid #bedb39;
             border-width: 1px 0;
             list-style: none;
-            margin: 0;
+            margin: -30px;
             padding: 0;
             text-align: center;
             float: right;
+            position: fixed;
+            z-index: 10;
+            width: 100%;
+            background-color: $greyLight;
+              font-family: $tangerine;
         }
     #nav
     {
         li {
             display: inline;
+            font-size: 40px;
+
             a {
                 display: inline-block;
                 padding: 25px;
                 color: orange;
+
+
             }
         }
     }
@@ -41,11 +50,15 @@ header {
         display: inline-block;
         padding: 25px;
         color: orange;
+          text-decoration:none;
     }
     #logo {
-        position: relative;
-        top: -6px;
-        left: -6px;
+        position:fixed;
+        z-index: 11;
+        height: 110px;
+        width: 110px;
+        left: 25px;
+
     }
     #menu {
         padding: 20px;

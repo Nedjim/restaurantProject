@@ -22,8 +22,8 @@ export default class Content extends React.Component {
 
     render() {
         return (
-                   <div className="plat">
-                        <h3>{this.props.name}</h3>
+                   <div className="plat" >
+                        <h3 id="plat">{this.props.name}</h3>
 
                          <div>Quantité: {this.state.qte}</div>
 
