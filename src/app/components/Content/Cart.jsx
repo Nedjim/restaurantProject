@@ -11,7 +11,7 @@ export default class Panier extends React.Component {
         console.log(this.props);
         return (
             <div >
-               Afficher Panier
+             PAnier
             </div>
         );
     }

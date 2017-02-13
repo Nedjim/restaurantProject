@@ -22,16 +22,22 @@ export default class Content extends React.Component {
 
     render() {
         return (
-                   <div className="plat" >
-                        <h3 id="plat">{this.props.name}</h3>
+                   <div className="plat">
+                        <h3 id="plat"><strong>{this.props.name}</strong></h3>
+                        <div><strong>{this.props.price}</strong></div>
 
-                         <div>Quantité: {this.state.qte}</div>
+
+                        <div>Quantité: {this.state.qte}</div>
 
                         <img src={this.props.image}/>
 
-                         <p className="text">{this.props.description}</p>
-                         <button onClick ={this.removeCart}> - </button>
-                         <button onClick={this.addCart}> + </button>
+                        <div>
+                            <p className="text">{this.props.description}</p>
+                         </div>
+                         <div className="buttons">
+                            <button onClick ={this.removeCart}> - </button>
+                            <button onClick={this.addCart}> + </button>
+                         </div>
 
                     </div>
         );
