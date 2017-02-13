@@ -13,7 +13,7 @@ export default class Header extends React.Component {
                       <li><a href="Panier">Panier</a></li>
                   </ul>
                   <div id="logo">
-                      <img src="app/img/header/la.png" />
+                      <img src="app/img/header/laa.png" />
                   </div>
               </div>
             </header>
