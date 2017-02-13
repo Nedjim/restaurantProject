@@ -176,3 +176,18 @@ header {
         }
     }
 }
+
+
+/*------------------MAP------------------*/
+
+#map {
+    text-align: center;
+    margin-bottom: 2rem;
+    h2 {
+        font-size: 1.5rem;
+        $color: $brown;
+    }
+    img {
+        width: 50%;
+    }
+}
