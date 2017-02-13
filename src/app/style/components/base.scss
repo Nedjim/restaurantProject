@@ -17,15 +17,15 @@ body {
 
 header {
     #nav {
-        border: 1px solid #bedb39;
-        border-width: 1px 0;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        text-align: center;
-        float: right;
-    }
-    #nav,
+            border: 1px solid #bedb39;
+            border-width: 1px 0;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            float: right;
+        }
+    #nav
     {
         li {
             display: inline;
@@ -52,27 +52,65 @@ header {
     }
 }
 
-
 /*----------------SLIDE--------------------*/
 
-#slide {
-    margin: 20px auto;
-    overflow: hidden;
+#slider{
     width: 70%;
-    ul {
-        display: flex;
-        list-style: none;
-        transition: all 0.3s ease-in-out;
+    max-width: 1000px;
+    height: 500px;
+    overflow: hidden;
+    margin: 130px auto;
+    border: 3px solid #DCDCDC;
+
+    figure{
+        position: relative;
+        width: 500%;
+        margin: 0;
+        padding: 0;
+        font-size: 0;
+        text-align: left;
+        animation: 15s slidy infinite;
+
+        img{
+            width: 20%;
+            height: auto;
+            float: left;
+             &:nth-child(4){
+                height: 500px;
+            }
+        }
     }
-    ul li img {
-        width: 200%;
+
+    @keyframes slidy {
+        0%{
+            left: 0%;
+        }
+        20%{
+            left: 0%;
+        }
+        25%{
+            left: -100%;
+        }
+        45%{
+            left:-100%;
+        }
+        50%{
+            left: -200%;
+        }
+        70%{
+            left:-200%;
+        }
+        75%{
+            left: -300%;
+        }
+        95%{
+            left:-300%;
+        }
+        100%{
+            left: -400%;
+        }
     }
 }
-
-
-/*mettre un id "slide" à votre content principale*/
-
-
 /*----------------CONTENT------------------*/
 
 #content {
