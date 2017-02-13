@@ -13,7 +13,6 @@ export default class Slide extends React.Component {
                     <img src="http://scrat.hellocoton.fr/img/guide/recette-ma-salade-tiede-de-chou-kale-et-lentilles-patates-douces-et-saumon-fume-18911644.jpg"/>
                     <img src="http://www.epicurien.be/img/recettes-cuisines/20130928_poulet_morilles-500.jpg"/>
                 </figure>
-
             </div>
         );
     }

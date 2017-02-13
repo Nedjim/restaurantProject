@@ -14,115 +14,103 @@ body {
 
 
 /*mettre un id "header" à votre content principale*/
-header,{
-    #nav{
-        border:1px solid #bedb39;
-        border-width:1px 0;
-        list-style:none;
-        margin:0;
-        padding:0;
-        text-align:center;
-        float: right;
-    }
-    #nav,{
-      li{
-         display:inline;
-         a{
-             display:inline-block;
-             padding:25px;
-             color: orange;
-         }
 
-      }
+header {
+    #nav {
+            border: 1px solid #bedb39;
+            border-width: 1px 0;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            float: right;
+        }
+    #nav
+    {
+        li {
+            display: inline;
+            a {
+                display: inline-block;
+                padding: 25px;
+                color: orange;
+            }
+        }
     }
-    #nav, a{
-        display:inline-block;
-        padding:25px;
+    #nav,
+    a {
+        display: inline-block;
+        padding: 25px;
         color: orange;
     }
-
-    #logo{
-      position: relative;
-      top: -6px;
-      left: -5px;
-
+    #logo {
+        position: relative;
+        top: -6px;
+        left: -5px;
     }
-
-    #menu{
-      padding: 20px;
+    #menu {
+        padding: 20px;
     }
 }
-
 
 /*----------------SLIDE--------------------*/
 
 #slider{
-width: 70%;
-max-width: 1000px;
-height: 500px;
-overflow: hidden;
-margin: 130px auto;
-border: 3px solid #DCDCDC;
+    width: 70%;
+    max-width: 1000px;
+    height: 500px;
+    overflow: hidden;
+    margin: 130px auto;
+    border: 3px solid #DCDCDC;
 
+    figure{
+        position: relative;
+        width: 500%;
+        margin: 0;
+        padding: 0;
+        font-size: 0;
+        text-align: left;
+        animation: 15s slidy infinite;
 
+        img{
+            width: 20%;
+            height: auto;
+            float: left;
+             &:nth-child(4){
+                height: 500px;
+            }
+        }
+    }
 
-
-figure{
-    position: relative;
-    width: 500%;
-    margin: 0;
-    padding: 0;
-    font-size: 0;
-    text-align: left;
-    animation: 15s slidy infinite;
-
-    img{
-        width: 20%;
-        height: auto;
-        float: left;
-         &:nth-child(4){
-            height: 500px;
+    @keyframes slidy {
+        0%{
+            left: 0%;
+        }
+        20%{
+            left: 0%;
+        }
+        25%{
+            left: -100%;
+        }
+        45%{
+            left:-100%;
+        }
+        50%{
+            left: -200%;
+        }
+        70%{
+            left:-200%;
+        }
+        75%{
+            left: -300%;
+        }
+        95%{
+            left:-300%;
+        }
+        100%{
+            left: -400%;
         }
     }
 }
-
-}
-
-@keyframes slidy {
-    0%{
-        left: 0%;
-    }
-    20%{
-        left: 0%;
-    }
-    25%{
-        left: -100%;
-    }
-    45%{
-        left:-100%;
-    }
-    50%{
-        left: -200%;
-    }
-    70%{
-        left:-200%;
-    }
-    75%{
-        left: -300%;
-    }
-    95%{
-        left:-300%;
-    }
-    100%{
-        left: -400%;
-    }
-}
-
-
-
-/*mettre un id "slide" à votre content principale*/
-
-
 /*----------------CONTENT------------------*/
 
 #content {
@@ -142,28 +130,28 @@ figure{
         display: inline-block;
         margin: 0.5rem;
         padding: 0.5rem;
-        width: 30%;
+        width: 20rem;
+        height: 20rem;
         img {
             @include border-radius(0.5rem);
             transition-duration: 0.2s;
-            width: 60%;
+            width: 11rem;
+            height: 8rem;
             margin: 1rem 0.5rem;
         }
         h3 {
             font-size: 1.5rem;
             color: $brown;
         }
+        p {
+            position: absolute;
+            width: 20rem;
+        }
     }
     .plat:hover {
         box-shadow: 0.2rem 0.2rem 0.2rem #BDBDBD;
         img {
-            width: 62%;
+            width: 12rem;
         }
     }
 }
-
-
-/*----------------------MAP-----------------------*/
-
-
-/*mettre un id "map" à votre content principale*/
