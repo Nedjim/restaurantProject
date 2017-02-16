@@ -1,7 +1,12 @@
 # Restaurant Project
 
-    Hélene, Stéphane, Dadou, Nessima, Nedjim
+    Hélène, Stéphane, Dadou, Nessima, Nedjim
 
+Nedjim: panier
+Dadou: header
+stéphane: panier
+Nessima: carroussel
+hélène: map
 ```
 $ git clone git@github.com:Nedjim/restaurantProject.git
 ```
@@ -27,3 +32,4 @@ Lien: http://localhost:8080/
 $ npm install superagent --save
 $ npm install --save-dev file-loader
 ```
+# restaurant-project
